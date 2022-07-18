@@ -9,13 +9,13 @@ body {
     height: 100%;
 }
 
-header {
-    display: grid;
+nav {
     padding: 5px;
+    justify-content: space-between;
 }
 
 #menu-bar {
-    background-color: rgb(73, 73, 73);
+    background-color: #161616;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,14 +23,43 @@ header {
 
 .menu-bt:hover {
     font-size: 24px;
-    background-color: #007c0a54;
+    background-color: rgba(255, 255, 255, 0.062);
     border-radius: 5px;
-    color: white;
+    color: rgb(31, 55, 134);
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+nav, ul {
+    display: flex;
+    flex-direction: row;
 }
 
 .logo {
     width: 30vh;
     margin-left: 5vh;
+}
+
+li {
+    color: white;
+    padding: 0 20px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 28px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
 }
 
 .menu-icon {
@@ -42,30 +71,90 @@ header {
 .menu-icon:hover {
     width: 35px;
     height: 35px;
+    cursor: pointer;
+    color: rgb(31, 55, 134);
 }
 
 .frase {
     padding: 5px;
 }
 
-.produtos {
+.container {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.camiseta {
+.box-produto {
+    background-color: transparent;
+    margin: auto;
+}
+
+.produto1 {
     width: 250px;
     border-radius: 10px;
     border: 2px solid#000000;
-    
 }
-.camiseta:hover {
+
+.produto1:hover {
     width: 270px;
     border: 2px solid#007c0a;
+    cursor: pointer;
 }
+
+hr {
+    color: #000000;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+.titulo {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(0, 0, 0, 0.8);
+    margin-top: 50px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+    /*ALTURA TEMPORÁRIA*/
+.area-2 {
+    height: 100px;
+}
+
 footer {
     background-color: #000000;
     color: white;
     padding: 5px;
 }
+
+button:focus ~ ul {
+    height: 85px;
+}
+
+@media (max-width: 700px) {
+    nav, ul {
+        flex-direction: column;
+        align-items: unset;
+    }
+
+    ul {
+        text-align: center;
+        height: 0;
+    }
+
+    li, ul {
+        width: 100%;
+    }
+
+    button {
+        display: flex;
+    }
+}
+
+/* TODO:
+    
