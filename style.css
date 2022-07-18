@@ -6,7 +6,7 @@
 body {
     background-image: linear-gradient(to bottom, #bebebe, rgb(0, 0, 0));
     text-align: center;
-    height: 100vw;
+    height: 100%;
 }
 
 header {
@@ -25,6 +25,7 @@ header {
     font-size: 24px;
     background-color: #007c0a54;
     border-radius: 5px;
+    color: white;
 }
 
 .logo {
@@ -50,6 +51,7 @@ header {
 .produtos {
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .camiseta {
@@ -61,4 +63,9 @@ header {
 .camiseta:hover {
     width: 270px;
     border: 2px solid#007c0a;
+}
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 5px;
 }
