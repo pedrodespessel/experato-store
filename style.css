@@ -4,18 +4,47 @@
 }
 
 body {
-    background-color: rgb(13, 13, 75);
+    background-image: linear-gradient(to bottom, #bebebe, rgb(0, 0, 0));
     text-align: center;
-
+    height: 100vw;
 }
 
-p {
-    color: white;
+header {
+    display: grid;
+    padding: 5px;
 }
 
-#menu {
-    background-color: rgb(9, 0, 134);
-    text-align: center;
+#menu-bar {
+    background-color: rgb(73, 73, 73);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-bt:hover {
+    font-size: 24px;
+    background-color: #007c0a54;
+    border-radius: 5px;
+}
+
+.logo {
+    width: 30vh;
+    margin-left: 5vh;
+}
+
+.menu-icon {
+    margin-right: 5vh;
+    width: 25px;
+    height: 25px;
+}
+
+.menu-icon:hover {
+    width: 35px;
+    height: 35px;
+}
+
+.frase {
+    padding: 5px;
 }
 
 .produtos {
